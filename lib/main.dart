@@ -41,8 +41,9 @@ class LandingPage extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Colors.white.withOpacity(0.0), // Fully transparent at top
-                Colors.white.withOpacity(0.95), // Nearly opaque at bottom
+                Colors.white.withAlpha(0), // Fully transparent at top
+                Colors.white.withAlpha(
+                    242), // Nearly opaque at bottom (0.95 * 255 ≈ 242)
               ],
               stops: const [
                 0.5,
